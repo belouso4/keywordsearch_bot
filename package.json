@@ -1,0 +1,32 @@
+{
+  "name": "keywordserchbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./main.js",
+  "type": "module",
+  "nodemonConfig": {
+    "ext": "js",
+    "ignore": [
+      "data/*"
+    ],
+    "delay": "2"
+  },
+  "scripts": {
+    "dev": "nodemon main.js",
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mtproto/core": "^6.3.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "mongoose": "^8.2.0",
+    "node-json-db": "^2.3.0",
+    "prompt": "^1.3.0",
+    "telegraf": "^4.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

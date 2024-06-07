@@ -1,0 +1,8 @@
+services:
+  telegram-bot:
+    build: .
+    container_name: keywordsearch_bot
+    restart: unless-stopped
+    volumes:
+      - .:/app
+      - /app/node_modules
